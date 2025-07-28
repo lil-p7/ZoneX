@@ -21,7 +21,7 @@ export default function LoginScreen() {
 
     const result = await signIn(email, password);
     if (result === null) {
-      router.replace("/(tabs)/home" as RelativePathString);
+      router.replace("/(tabs)/map" as RelativePathString);
     } else {
       setError(result);
     }
